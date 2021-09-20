@@ -94,4 +94,8 @@ body {
     .text-pink {
         color: #FFBDBD;
     }
+
+    .w-75 {
+        width: 75%;
+    }
 }
