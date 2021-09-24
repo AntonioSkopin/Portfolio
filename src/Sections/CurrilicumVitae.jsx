@@ -9,14 +9,13 @@ const CurricilumVitae = () => {
         <section className="container mx-auto px-6 py-12">
             <div>
                 <SubHeading text="Curricilum Vitae" />
-                <h1 className="text-dark-blue text-2xl sm:text-5xl font-medium leading-relaxed">
+                <h1 className="text-dark-blue text-2xl sm:text-5xl font-semibold" style={{ lineHeight: "1.4" }}>
                     I have worked on multiple&nbsp;
                     <br className="hidden sm:block" />
                     cool websites for businesses.
                 </h1>
-                <p className="text-gray-blue py-4 text-xl">From sports startups to an internship at an IT company. </p>
             </div>
-            <div className="py-12 flex flex-col md:flex-row sm:justify-between">
+            <div className="py-16 flex flex-col md:flex-row sm:justify-between">
                 <ProjectItems />
                 <div className="md:w-1/4 flex flex-col pt-12 md:py-0">
                     <div>

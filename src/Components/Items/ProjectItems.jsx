@@ -2,14 +2,14 @@
 import ProjectItem from "./ProjectItem";
 
 // Data
-import Projects from "../../Data/Projects";
+import CvData from "../../Data/CvData";
 
 const ProjectItems = () => {
     return (
         <div className="md:w-3/4">
             {
                 // Loops through Projects array and returns each project
-                Projects.map((project, index) => {
+                CvData.map((project, index) => {
                     console.log(project);
                     return <ProjectItem
                         key={index}

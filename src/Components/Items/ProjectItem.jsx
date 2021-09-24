@@ -18,7 +18,7 @@ const ProjectItem = (props) => {
                 </div>
                 <div className="flex flex-col pl-4">
                     <p className="font-bold text-lg sm:text-xl text-dark-blue">{props.Title}</p>
-                    <p className="text-gray-blue text-sm sm:text-md">{props.Date}</p>
+                    <p className="text-gray-blue py-1 text-sm sm:text-md">{props.Date}</p>
                     {
                         // Only display couple of tools when item is not toggled
                         !isItemOpen && <p className="text-gray-blue text-sm sm:text-md">{props.Tools.substr(0, 25)}...</p>
@@ -27,7 +27,7 @@ const ProjectItem = (props) => {
             </span>
             {
                 !isItemOpen && <span className="flex w-screen items-center mt-2">
-                    <hr className="w-75 sm:w-1/2" />
+                    <hr className="w-75 sm:w-1/2 2xl:w-1/4" />
                     <IoIosArrowDown
                         onClick={toggleItem}
                         className="text-3xl text-gray-300 ml-4 cursor-pointer transition duration-500 ease-in-out hover:text-gray-600" />
@@ -53,7 +53,7 @@ const ProjectItem = (props) => {
                         </ul>
                     </div>
                     <span className="flex w-screen items-center mt-2">
-                        <hr className="w-4/5 sm:w-1/2" />
+                        <hr className="w-4/5 sm:w-1/2 2xl:w-1/4" />
                         <IoIosArrowUp
                             onClick={toggleItem}
                             className="text-3xl text-gray-300 ml-4 cursor-pointer transition duration-500 ease-in-out hover:text-gray-600" />
