@@ -1,13 +1,7 @@
-// Sections
-import LandingPage from "./Sections/LandingPage";
-import CurrilicumVitae from "./Sections/CurrilicumVitae";
+import Routes from "./Routes/Routes";
 
 const App = () => {
-    return (
-        <div>
-            <CurrilicumVitae />
-        </div>
-    )
+    return <Routes />
 };
 
 export default App;

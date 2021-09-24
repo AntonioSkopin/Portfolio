@@ -4,7 +4,7 @@ import AT_Logo from "../Assets/at_logo.png";
 import TB_Logo from "../Assets/tb_logo.png";
 import AH_Logo from "../Assets/ah_logo.png";
 
-const Projects = [
+const CvData = [
     {
         "IMG": AH_Logo,
         "Title": "Intern Fullstack Developer",
@@ -50,4 +50,4 @@ const Projects = [
     }
 ];
 
-export default Projects;
+export default CvData;
