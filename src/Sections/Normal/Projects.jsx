@@ -1,6 +1,6 @@
 // Components
-import ProjectCard from "../Components/Cards/ProjectCard";
-import SubHeading from "../Components/Text/SubHeading";
+import ProjectCard from "../../Components/Cards/ProjectCard";
+import SubHeading from "../../Components/Text/SubHeading";
 
 // Icons
 import { FiPlus } from "react-icons/fi";

@@ -7,6 +7,7 @@ import { PATH } from "../Constants/Paths";
 
 // Components
 import HomePage from "../Pages/HomePage";
+import SwissHomePage from "../Pages/SwissHomePage";
 
 const HomeRoutes = () => {
     return (
@@ -15,7 +16,7 @@ const HomeRoutes = () => {
                 exact
                 path={PATH.HOME}
                 component={() => (
-                    <HomePage />
+                    <SwissHomePage />
                 )}
             />
         </Switch>
