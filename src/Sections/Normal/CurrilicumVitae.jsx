@@ -1,7 +1,7 @@
 // Components
-import SubHeading from "../Components/Text/SubHeading";
-import ProjectItem from "../Components/Items/ProjectItem";
-import ProjectItems from "../Components/Items/ProjectItems";
+import SubHeading from "../../Components/Text/SubHeading";
+import ProjectItem from "../../Components/Items/ProjectItem";
+import ProjectItems from "../../Components/Items/ProjectItems";
 
 
 const CurricilumVitae = () => {

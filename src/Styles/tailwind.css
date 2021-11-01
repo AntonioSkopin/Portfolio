@@ -13,27 +13,34 @@ body {
     overflow-x: hidden;
 }
 
-/* custom scrollbar */
-::-webkit-scrollbar {
-  width: 20px;
+img {
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+            filter: grayscale(100%);
 }
 
-::-webkit-scrollbar-track {
-  background-color: transparent;
+.red-bg {
+    background-color: #f45844;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: #d6dee1;
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
+.hover-to-red-bg:hover {
+    background-color: #f45844;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background-color: #a8bbbf;
+.hover-to-red:hover {
+    color: #f45844;
+}
+
+.red-text {
+    color: #f45844;
 }
 
 @layer utilities {
+    .text-big-xl {
+        font-size: 11rem;
+    }
 
     .hovered-project-card-cta {
         display: none;
