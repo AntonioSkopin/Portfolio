@@ -4,16 +4,18 @@ import LandingPage from "../Sections/Swiss/LandingPage";
 import Testimonials from "../Sections/Swiss/Testimonials";
 import Projects from "../Sections/Swiss/Projects";
 import AboutMe from "../Sections/Swiss/AboutMe";
+import ProjectsTest from "../Sections/Swiss/ProjectsTest";
 
 const SwissHomePage = () => {
     return (
         <div className="w-screen" style={{ backgroundColor: "#fef9f7" }}>
             <Navbar />
             <LandingPage />
-            <Projects />
+            <ProjectsTest />
+            {/* <Projects /> */}
             <AboutMe />
-            <Testimonials />
-            <Contact />
+            {/* <Testimonials /> */}
+            {/* <Contact /> */}
         </div>
     );
 };
