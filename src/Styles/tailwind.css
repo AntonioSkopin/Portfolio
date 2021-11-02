@@ -13,6 +13,18 @@ body {
     overflow-x: hidden;
 }
 
+.outline-text {
+    display: inline-block;
+	cursor: pointer;
+	position: relative;
+	-webkit-text-stroke: 1.5px #000;
+	text-stroke: 1.5px #000;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+	color: transparent;
+	transition: opacity 0.4s;
+}
+
 img {
     -webkit-filter: grayscale(100%);
        -moz-filter: grayscale(100%);
@@ -38,8 +50,10 @@ img {
 }
 
 @layer utilities {
-    .text-big-xl {
-        font-size: 11rem;
+    @variants responsive {
+        .text-big-xl {
+            font-size: 11rem;
+        }
     }
 
     .hovered-project-card-cta {
