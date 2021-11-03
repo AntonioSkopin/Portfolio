@@ -1,22 +1,23 @@
-import Contact from "../Sections/Swiss/Contact";
-import Navbar from "../Sections/Swiss/Navbar";
-import LandingPage from "../Sections/Swiss/LandingPage";
-import Testimonials from "../Sections/Swiss/Testimonials";
-import Projects from "../Sections/Swiss/Projects";
-import AboutMe from "../Sections/Swiss/AboutMe";
-import ProjectsTest from "../Sections/Swiss/ProjectsTest";
+import { Suspense, lazy } from "react";
+
+// Components
+const Navbar = lazy(() => import("../Sections/Navbar"));
+const LandingPage = lazy(() => import("../Sections/LandingPage"));
+const Projects = lazy(() => import("../Sections/Projects"));
+const AboutMe = lazy(() => import("../Sections/AboutMe"));
+const Contact = lazy(() => import("../Sections/Contact"));
 
 const SwissHomePage = () => {
     return (
-        <div className="w-screen" style={{ backgroundColor: "#fef9f7" }}>
-            <Navbar />
-            <LandingPage />
-            <ProjectsTest />
-            {/* <Projects /> */}
-            <AboutMe />
-            {/* <Testimonials /> */}
-            {/* <Contact /> */}
-        </div>
+        <Suspense fallback={<h1>Wait...</h1>}>
+            <div className="w-screen" style={{ backgroundColor: "#fef9f7", zIndex: "999" }}>
+                <Navbar />
+                <LandingPage />
+                <Projects />
+                <AboutMe />
+                <Contact />
+            </div>
+        </Suspense>
     );
 };
 

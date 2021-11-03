@@ -6,7 +6,6 @@ import { Route } from "react-router";
 import { PATH } from "../Constants/Paths";
 
 // Components
-import HomePage from "../Pages/HomePage";
 import SwissHomePage from "../Pages/SwissHomePage";
 
 const HomeRoutes = () => {

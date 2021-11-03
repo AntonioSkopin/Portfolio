@@ -1,5 +1,8 @@
+// Icons
 import { AiOutlineClose } from "react-icons/ai";
-import "../../Styles/test.css";
+
+// Styles
+import "../Styles/main.css";
 
 const Menu = (props) => {
     return (
@@ -12,10 +15,10 @@ const Menu = (props) => {
                         className="text-3xl cursor-pointer" />
                 </header>
                 <div className="px-4 w-full flex justify-center items-center">
-                    <ul className="font-light text-5xl text-center">
-                        <li><a class="menu__item-link">Work</a></li>
-                        <li className="py-12"><a class="menu__item-link">About</a></li>
-                        <li><a class="menu__item-link">Contact</a></li>
+                    <ul className="font-bold text-5xl text-center">
+                        <li><a class="outline-text">Work</a></li>
+                        <li className="py-12"><a class="outline-text">About</a></li>
+                        <li><a class="outline-text">Contact</a></li>
                     </ul>
                 </div>
                 <div className="w-screen relative" style={{backgroundColor: "#1b1b1e"}}>

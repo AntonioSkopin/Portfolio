@@ -1,4 +1,5 @@
-import { FiDownload } from "react-icons/fi";
+// Components
+import OrangeButton from "../Components/Buttons/OrangeButton";
 
 const AboutMe = () => {
     return (
@@ -11,7 +12,7 @@ const AboutMe = () => {
                 </h1>
             </div>
             <div className="h-auto py-24 flex justify-between">
-                <h1 className="w-4/5 text-2xl font-semibold">2019 - Present</h1>
+                <h1 className="w-4/5 text-xl sm:text-2xl font-semibold">2019 - Present</h1>
                 <p className="font-light text-xl leading-loose">
                     My design style is simplistic yet effective and I design with a purpose! 
                     I’m well-versed in producing mobile/desktop applications and websites which satisfy 
@@ -21,12 +22,10 @@ const AboutMe = () => {
                 </p>
             </div>
             <div className="text-center">
-                <button class="learn-more" style={{ width: "15rem" }}>
-                    <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text button-text-black">Download CV</span>
-                </button>
+                <OrangeButton 
+                    text="Download CV"
+                    textColor="button-text-black"
+                    width="15rem" />
             </div>
         </div>
     );

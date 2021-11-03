@@ -2,36 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    overflow-x: hidden;
-}
-
-.outline-text {
-    display: inline-block;
-	cursor: pointer;
-	position: relative;
-	-webkit-text-stroke: 1.5px #000;
-	text-stroke: 1.5px #000;
-	-webkit-text-fill-color: transparent;
-	text-fill-color: transparent;
-	color: transparent;
-	transition: opacity 0.4s;
-}
-
-img {
+/* img {
     -webkit-filter: grayscale(100%);
        -moz-filter: grayscale(100%);
          -o-filter: grayscale(100%);
         -ms-filter: grayscale(100%);
             filter: grayscale(100%);
-}
+} */
 
 .red-bg {
     background-color: #f45844;
@@ -54,101 +31,5 @@ img {
         .text-big-xl {
             font-size: 11rem;
         }
-    }
-
-    .hovered-project-card-cta {
-        display: none;
-    }
-
-    .project-card:hover .hovered-project-card-cta {
-        display: block;
-    }
-
-    .smooth-shadow {
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    }
-
-    .right-4-5 {
-        right: 50rem;
-    }
-
-    .rounded-6xl {
-        border-radius: 4rem;
-    }
-
-    .bounce-btn {
-        position: relative;
-        display: inline-block;
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        -webkit-transition-duration: 0.75s;
-        transition-duration: 0.75s;
-    }
-
-    .bounce-btn:hover,
-    .bounce-btn:focus,
-    .bounce-btn:active {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-        -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-        transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-    }
-
-    .bg-blue {
-        background-color: #4C40F7;
-    }
-
-    .text-blue {
-        color: #4C40F7;
-    }
-
-    .border-blue {
-        border-color: #4C40F7;
-    }
-
-    .bg-dark-blue {
-        background-color: #1D1B84;
-    }
-
-    .text-dark-blue {
-        color: #1D1B84;
-    }
-
-    .bg-gray-blue {
-        background-color: #344B80;
-    }
-
-    .text-gray-blue {
-        color: #344B80;
-    }
-
-    .bg-light-blue {
-        background-color: #ECF5FD;
-    }
-
-    .text-light-blue {
-        color: #ECF5FD;
-    }
-
-    .bg-accent-white {
-        background-color: #F6F6F6;
-    }
-
-    .text-accent-white {
-        color: #F6F6F6;
-    }
-
-    .bg-pink {
-        background-color: #FFBDBD;
-    }
-
-    .text-pink {
-        color: #FFBDBD;
-    }
-
-    .w-75 {
-        width: 75%;
     }
 }
