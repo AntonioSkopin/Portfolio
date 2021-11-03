@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
+
+// Icons
 import { CgMenuLeftAlt } from "react-icons/cg";
+
+// Components
 import Menu from "./Menu";
 
 const Navbar = () => {

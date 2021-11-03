@@ -1,10 +1,12 @@
-import "../../Styles/Button/button.css";
+// Components
+import InputText from "../Components/Forms/InputText";
+import TextArea from "../Components/Forms/TextArea";
+import OrangeButton from "../Components/Buttons/OrangeButton";
 
 const Contact = () => {
     return (
         <div className="w-screen" style={{ backgroundColor: "#1b1b1e" }}>
             <div className="container mx-auto px-4 py-20 text-white">
-                {/* <p className="text-xl">Contact me</p> */}
                 <div className="flex flex-col md:flex-row justify-evenly">
                     <div>
                         <h1 className="text-6xl py-4 font-semibold w-3/4 leading-normal">
@@ -12,26 +14,12 @@ const Contact = () => {
                             your project
                         </h1>
                         <form className="py-12 flex flex-col w-max">
-                            <input 
-                                type="text"
-                                placeholder="Name*"
-                                className="border-b-2 border-white bg-transparent text-white focus:outline-none pb-2" />
-                            <input 
-                                type="text"
-                                placeholder="Email*"
-                                className="border-b-2 border-white bg-transparent text-white focus:outline-none pb-2 my-12" />
-                            <textarea 
-                                name=""
-                                placeholder="Your message"
-                                className="border-b-2 border-white bg-transparent text-white focus:outline-none pb-2"
-                                cols="30" 
-                                rows="4"></textarea>
-                            <button class="my-12 learn-more">
-                                <span class="circle" aria-hidden="true">
-                                    <span class="icon arrow"></span>
-                                </span>
-                                <span class="button-text button-text-white">Send</span>
-                            </button>
+                            <InputText placeholder="Name*" />
+                            <InputText placeholder="Email*" />
+                            <TextArea placeholder="Your message" />
+                            <OrangeButton 
+                                text="Send"
+                                textColor="button-text-white" />
                         </form>
                     </div>
                     <div className="md:pl-24 py-8">

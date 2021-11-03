@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Mukta:700");
 button {
   position: relative;
   display: inline-block;
@@ -18,7 +17,7 @@ button.learn-more {
   height: auto;
 }
 
-button.learn-more .circle {
+button.learn-more .block {
   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
@@ -29,7 +28,7 @@ button.learn-more .circle {
   background: #f45844;
 }
 
-button.learn-more .circle .icon {
+button.learn-more .block .icon {
   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
@@ -39,7 +38,7 @@ button.learn-more .circle .icon {
   background: #fff;
 }
 
-button.learn-more .circle .icon.arrow {
+button.learn-more .block .icon.arrow {
   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625rem;
@@ -48,7 +47,7 @@ button.learn-more .circle .icon.arrow {
   background: none;
 }
 
-button.learn-more .circle .icon.arrow::before {
+button.learn-more .block .icon.arrow::before {
   position: absolute;
   content: '';
   top: -0.25rem;
@@ -85,11 +84,11 @@ button.learn-more .button-text-white {
   color: #fff;
 }
 
-button:hover .circle {
+button:hover .block {
   width: 100%;
 }
 
-button:hover .circle .icon.arrow {
+button:hover .block .icon.arrow {
   background: #fff;
   -webkit-transform: translate(1rem, 0);
           transform: translate(1rem, 0);
