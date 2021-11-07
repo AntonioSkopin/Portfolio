@@ -1,51 +1,37 @@
-// import IMG1 from "../../Assets/at_logo.png";
-// import IMG2 from "../../Assets/ftp_logo.png";
-// import IMG3 from "../../Assets/tb_logo.png";
-// import IMG4 from "../../Assets/ah_logo.png";
+// Components
+import Testimonial from "../Components/Testimonial/Testimonial";
 
-// import "../../Styles/tailwind.css"
+// Assets
+import Taxi from "../Assets/taxi.jpg";
+import Boxing from "../Assets/boxing.jpg";
+import Player from "../Assets/player.jpg";
+import Closet from "../Assets/closet.jpg";
 
-// const Testimonials = () => {
-//     return (
-//         <div>
-//             <div className="w-screen py-12">
-//                 <div className="container mx-auto px-4 py-12">
-//                     <div className="w-full flex justify-between items-center">
-//                         <div className="h-full grid grid-cols-2 items-center">
-//                             <div className="hover-to-red-bg cursor-pointer flex items-center justify-center border-2 border-r-0 border-b-0 border-gray-800 p-10 w-48 h-48">
-//                                 <img src={IMG1} className="w-" alt="" />
-//                             </div>
-//                             <div className="hover-to-red-bg cursor-pointer flex items-center justify-center border-2 border-b-0 border-gray-800 p-10 w-48 h-48">
-//                                 <img src={IMG2} className="w-" alt="" />
-//                             </div>
-//                             <div className="hover-to-red-bg cursor-pointer flex items-center justify-center border-2 border-r-0 border-gray-800 p-10 w-48 h-48">
-//                                 <img src={IMG3} className="w-" alt="" />
-//                             </div>
-//                             <div className="hover-to-red-bg cursor-pointer flex items-center justify-center border-2 border-gray-800 p-10 w-48 h-48">
-//                                 <img src={IMG4} className="w-" alt="" />
-//                             </div>
-//                         </div>
-//                         <div className="w-1/2">
-//                             <h1 className="text-6xl py-4 font-semibold leading-normal">
-//                                 What my clients say about me
-//                             </h1>
-//                             <div className="py-8">
-//                                 <p className="text-md font-light leading-loose">
-//                                     Contrary to popular belief, Lorem Ipsum is not simply random text. 
-//                                     It has roots in a piece of classical Latin literature from 45 BC, making 
-//                                     it over 2000 years old.
-//                                 </p>
-//                                 <div className="py-8">
-//                                     <h1 className="text-xl font-semibold">Sabri Boudarra</h1>
-//                                     <small>Owner</small>
-//                                 </div>
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// };
+const Testimonials = () => {
+    return (
+        <div className="container mx-auto px-4 py-12">
+            <Testimonial 
+                img={Taxi}
+                owner="Nordin"
+                business="Administratie Taxi"
+            />
+            <Testimonial 
+                img={Boxing}
+                owner="Sabri Boudarra"
+                business="Thaiboxing010"
+            />
+            <Testimonial 
+                img={Player}
+                owner="Clancy Konadu"
+                business="4ThePlayers"
+            />
+            <Testimonial 
+                img={Closet}
+                owner="Anela Sefer"
+                business="Anela's Closet"
+            />
+        </div>
+    );
+};
 
-// export default Testimonials;
+export default Testimonials;

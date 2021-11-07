@@ -48,7 +48,6 @@ const Contact = () => {
                                     <small className="text-gray-400">Messengers</small>
                                     <p className="text-xl">INSTAGRAM</p>
                                     <p className="text-xl">LINKEDIN</p>
-                                    <p className="text-xl">WHATSAPP</p>
                                     <p className="text-xl">FACEBOOK</p>
                                 </div>
                             </div>

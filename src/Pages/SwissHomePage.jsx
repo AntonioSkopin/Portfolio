@@ -5,6 +5,7 @@ const Navbar = lazy(() => import("../Sections/Navbar"));
 const LandingPage = lazy(() => import("../Sections/LandingPage"));
 const Projects = lazy(() => import("../Sections/Projects"));
 const AboutMe = lazy(() => import("../Sections/AboutMe"));
+const Testimonials = lazy(() => import("../Sections/Testimonials"));
 const Contact = lazy(() => import("../Sections/Contact"));
 
 const SwissHomePage = () => {
@@ -13,8 +14,9 @@ const SwissHomePage = () => {
             <div className="w-screen" style={{ backgroundColor: "#fef9f7", zIndex: "999" }}>
                 <Navbar />
                 <LandingPage />
-                <Projects />
                 <AboutMe />
+                <Projects />
+                <Testimonials />
                 <Contact />
             </div>
         </Suspense>
