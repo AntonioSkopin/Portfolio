@@ -6,7 +6,7 @@ $red: #f45844;
   transition: $property $duration $ease;
 }
 
-button {
+button, a {
   position: relative;
   display: inline-block;
   cursor: pointer;

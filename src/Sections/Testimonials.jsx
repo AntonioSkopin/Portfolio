@@ -9,7 +9,7 @@ import Closet from "../Assets/closet.jpg";
 
 const Testimonials = () => {
     return (
-        <div className="container mx-auto px-4 py-12">
+        <div className="container mx-auto px-4 pb-12">
             <Testimonial 
                 img={Taxi}
                 owner="Nordin"

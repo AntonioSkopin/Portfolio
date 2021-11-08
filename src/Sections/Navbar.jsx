@@ -36,9 +36,15 @@ const Navbar = () => {
                         {/* DESKTOP NAV */}
                         <nav className="hidden md:block ml-24">
                             <ul className="flex font-light text-md">
-                                <li><a href="#">Work</a></li>
-                                <li className="mx-12"><a href="#">About</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li>
+                                    <a className="hover:underline" href="#about">About</a>
+                                </li>
+                                <li className="mx-12 hover:underline">
+                                    <a className="hover:underline" href="#projects">Work</a>
+                                </li>
+                                <li>
+                                    <a className="hover:underline" href="#contact">Contact</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>

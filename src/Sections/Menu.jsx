@@ -16,9 +16,15 @@ const Menu = (props) => {
                 </header>
                 <div className="px-4 w-full flex justify-center items-center">
                     <ul className="font-bold text-5xl text-center">
-                        <li><a class="outline-text">Work</a></li>
-                        <li className="py-12"><a class="outline-text">About</a></li>
-                        <li><a class="outline-text">Contact</a></li>
+                        <li>
+                            <a onClick={props.handleMenu} href="#about" class="outline-text">About</a>
+                        </li>
+                        <li className="py-12">
+                            <a onClick={props.handleMenu} href="#projects" class="outline-text">Work</a>
+                        </li>
+                        <li>
+                            <a onClick={props.handleMenu} href="#contact" class="outline-text">Contact</a>
+                        </li>
                     </ul>
                 </div>
                 <div className="w-screen relative" style={{backgroundColor: "#1b1b1e"}}>
@@ -41,9 +47,9 @@ const Menu = (props) => {
                             <div className="py-8">
                                 <small className="text-gray-400">Messengers</small>
                                 <div className="flex">
-                                    <p className="text-sm">FB MESSENGER -&nbsp;</p>
-                                    <p className="text-sm">LINKEDIN -&nbsp;</p>
-                                    <p className="text-sm ">FACEBOOK</p>
+                                    <a href="http://www.instagram.com/webdev.antonio/" className="text-sm">INSTAGRAM -&nbsp;</a>
+                                    <a href="http://www.linkedin.com/" className="text-sm">LINKEDIN -&nbsp;</a>
+                                    <a href="http://www.facebook.com/" className="text-sm ">FACEBOOK</a>
                                 </div>
                             </div>
                         </div>
