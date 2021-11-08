@@ -1,4 +1,4 @@
-button {
+button, a {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -12,12 +12,12 @@ button {
   font-family: inherit;
 }
 
-button.learn-more {
+button.learn-more, a.learn-more {
   width: 10rem;
   height: auto;
 }
 
-button.learn-more .block {
+button.learn-more .block, a.learn-more .block {
   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
@@ -28,7 +28,7 @@ button.learn-more .block {
   background: #f45844;
 }
 
-button.learn-more .block .icon {
+button.learn-more .block .icon, a.learn-more .block .icon {
   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
@@ -38,7 +38,7 @@ button.learn-more .block .icon {
   background: #fff;
 }
 
-button.learn-more .block .icon.arrow {
+button.learn-more .block .icon.arrow, a.learn-more .block .icon.arrow {
   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625rem;
@@ -47,7 +47,7 @@ button.learn-more .block .icon.arrow {
   background: none;
 }
 
-button.learn-more .block .icon.arrow::before {
+button.learn-more .block .icon.arrow::before, a.learn-more .block .icon.arrow::before {
   position: absolute;
   content: '';
   top: -0.25rem;
@@ -60,7 +60,7 @@ button.learn-more .block .icon.arrow::before {
           transform: rotate(45deg);
 }
 
-button.learn-more .button-text {
+button.learn-more .button-text, a.learn-more .button-text {
   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
@@ -76,25 +76,25 @@ button.learn-more .button-text {
   text-transform: uppercase;
 }
 
-button.learn-more .button-text-black {
+button.learn-more .button-text-black, a.learn-more .button-text-black {
   color: #282936;
 }
 
-button.learn-more .button-text-white {
+button.learn-more .button-text-white, a.learn-more .button-text-white {
   color: #fff;
 }
 
-button:hover .block {
+button:hover .block, a:hover .block {
   width: 100%;
 }
 
-button:hover .block .icon.arrow {
+button:hover .block .icon.arrow, a:hover .block .icon.arrow {
   background: #fff;
   -webkit-transform: translate(1rem, 0);
           transform: translate(1rem, 0);
 }
 
-button:hover .button-text {
+button:hover .button-text, a:hover .button-text {
   color: #fff;
 }
 /*# sourceMappingURL=button.css.map */
